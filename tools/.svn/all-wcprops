@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/ea/!svn/ver/13972/trunk/tools
+END
+backup.pl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/13972/trunk/tools/backup.pl
+END
+mapcheck.sh
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/13972/trunk/tools/mapcheck.sh
+END
+vs9-to-vs8.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/13084/trunk/tools/vs9-to-vs8.php
+END
+mapreg-converter.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ea/!svn/ver/13086/trunk/tools/mapreg-converter.php
+END
+getlogincount.pl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/13972/trunk/tools/getlogincount.pl
+END
+mapchecker.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/13972/trunk/tools/mapchecker.sh
+END
+stackdump
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/13045/trunk/tools/stackdump
+END
+mob_db.pl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/13972/trunk/tools/mob_db.pl
+END
+checkversion.pl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/13972/trunk/tools/checkversion.pl
+END
+item_db.pl
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/13972/trunk/tools/item_db.pl
+END

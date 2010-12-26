@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/ea/!svn/ver/14579/trunk/src/char
+END
+int_homun.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14567/trunk/src/char/int_homun.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/13022/trunk/src/char/Makefile.in
+END
+int_status.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/12573/trunk/src/char/int_status.h
+END
+int_pet.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ea/!svn/ver/14567/trunk/src/char/int_pet.c
+END
+int_homun.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/12573/trunk/src/char/int_homun.h
+END
+int_pet.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ea/!svn/ver/12573/trunk/src/char/int_pet.h
+END
+int_party.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14567/trunk/src/char/int_party.c
+END
+char.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/14579/trunk/src/char/char.c
+END
+int_storage.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/14567/trunk/src/char/int_storage.c
+END
+int_party.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/12573/trunk/src/char/int_party.h
+END
+int_guild.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14567/trunk/src/char/int_guild.c
+END
+inter.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/14567/trunk/src/char/inter.c
+END
+char.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/14168/trunk/src/char/char.h
+END
+int_storage.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/13093/trunk/src/char/int_storage.h
+END
+int_guild.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14487/trunk/src/char/int_guild.h
+END
+inter.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/13000/trunk/src/char/inter.h
+END
+int_status.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/14567/trunk/src/char/int_status.c
+END

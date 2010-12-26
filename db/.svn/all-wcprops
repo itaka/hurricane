@@ -1,0 +1,365 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/ea/!svn/ver/14596/trunk/db
+END
+exp_homun.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/9410/trunk/db/exp_homun.txt
+END
+item_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ea/!svn/ver/14559/trunk/db/item_db.txt
+END
+homun_skill_tree.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/9410/trunk/db/homun_skill_tree.txt
+END
+produce_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/13582/trunk/db/produce_db.txt
+END
+homunculus_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14298/trunk/db/homunculus_db.txt
+END
+mob_pouch.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/10468/trunk/db/mob_pouch.txt
+END
+item_delay.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/14521/trunk/db/item_delay.txt
+END
+item_trade.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/14463/trunk/db/item_trade.txt
+END
+refine_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/10401/trunk/db/refine_db.txt
+END
+item_group_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/9410/trunk/db/item_group_db.txt
+END
+skill_require_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/14367/trunk/db/skill_require_db.txt
+END
+attr_fix.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/13968/trunk/db/attr_fix.txt
+END
+exp_guild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/9410/trunk/db/exp_guild.txt
+END
+mob_skill_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/14412/trunk/db/mob_skill_db.txt
+END
+size_fix.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/12793/trunk/db/size_fix.txt
+END
+guild_skill_tree.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/9410/trunk/db/guild_skill_tree.txt
+END
+mob_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ea/!svn/ver/14549/trunk/db/mob_db.txt
+END
+skill_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/14378/trunk/db/skill_db.txt
+END
+statpoint.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/9410/trunk/db/statpoint.txt
+END
+Changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/14596/trunk/db/Changelog.txt
+END
+item_violetbox.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/13992/trunk/db/item_violetbox.txt
+END
+mob_avail.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/14534/trunk/db/mob_avail.txt
+END
+mob_poring.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/10454/trunk/db/mob_poring.txt
+END
+exp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/ea/!svn/ver/11154/trunk/db/exp.txt
+END
+skill_tree.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/14524/trunk/db/skill_tree.txt
+END
+item_noequip.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/12695/trunk/db/item_noequip.txt
+END
+mob_race2_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/14332/trunk/db/mob_race2_db.txt
+END
+job_db1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ea/!svn/ver/12842/trunk/db/job_db1.txt
+END
+item_cookie_bag.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/10102/trunk/db/item_cookie_bag.txt
+END
+job_db2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ea/!svn/ver/9410/trunk/db/job_db2.txt
+END
+item_findingore.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/9410/trunk/db/item_findingore.txt
+END
+mob_skill_db2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14270/trunk/db/mob_skill_db2.txt
+END
+mob_boss.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/14147/trunk/db/mob_boss.txt
+END
+map_index.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/14382/trunk/db/map_index.txt
+END
+mob_db2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ea/!svn/ver/14184/trunk/db/mob_db2.txt
+END
+quest_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/14490/trunk/db/quest_db.txt
+END
+item_cardalbum.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/13992/trunk/db/item_cardalbum.txt
+END
+item_misc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/14555/trunk/db/item_misc.txt
+END
+abra_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ea/!svn/ver/14474/trunk/db/abra_db.txt
+END
+item_avail.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/12386/trunk/db/item_avail.txt
+END
+item_scroll.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/9410/trunk/db/item_scroll.txt
+END
+packet_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/14516/trunk/db/packet_db.txt
+END
+exp2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/ea/!svn/ver/9410/trunk/db/exp2.txt
+END
+item_bluebox.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/13992/trunk/db/item_bluebox.txt
+END
+pet_db2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ea/!svn/ver/14596/trunk/db/pet_db2.txt
+END
+item_giftbox.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/13992/trunk/db/item_giftbox.txt
+END
+castle_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/12674/trunk/db/castle_db.txt
+END
+mob_chat_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ea/!svn/ver/14298/trunk/db/mob_chat_db.txt
+END
+create_arrow_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/13589/trunk/db/create_arrow_db.txt
+END
+skill_unit_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14412/trunk/db/skill_unit_db.txt
+END
+item_db2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/14112/trunk/db/item_db2.txt
+END
+const.txt
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/ea/!svn/ver/14551/trunk/db/const.txt
+END
+mercenary_skill_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ea/!svn/ver/14552/trunk/db/mercenary_skill_db.txt
+END
+map_cache.dat
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ea/!svn/ver/14293/trunk/db/map_cache.dat
+END
+mercenary_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/14412/trunk/db/mercenary_db.txt
+END
+mob_branch.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/14529/trunk/db/mob_branch.txt
+END
+skill_nocast_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/14367/trunk/db/skill_nocast_db.txt
+END
+skill_castnodex_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ea/!svn/ver/14367/trunk/db/skill_castnodex_db.txt
+END
+pet_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ea/!svn/ver/14596/trunk/db/pet_db.txt
+END
+skill_cast_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14367/trunk/db/skill_cast_db.txt
+END

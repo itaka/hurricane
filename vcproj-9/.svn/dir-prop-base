@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 158
+char-server_sql
+char-server_txt
+ladmin
+login-server_sql
+login-server_txt
+mapcache
+map-server_sql
+map-server_txt
+txt-converter-char
+txt-converter-login
+*.user
+
+END

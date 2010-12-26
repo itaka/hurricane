@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14395/trunk/npc/battleground/kvm
+END
+kvm_item_pay.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ea/!svn/ver/14369/trunk/npc/battleground/kvm/kvm_item_pay.txt
+END
+kvm_enter.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ea/!svn/ver/14395/trunk/npc/battleground/kvm/kvm_enter.txt
+END
+kvm01.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14395/trunk/npc/battleground/kvm/kvm01.txt
+END
+kvm02.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14395/trunk/npc/battleground/kvm/kvm02.txt
+END
+kvm03.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14395/trunk/npc/battleground/kvm/kvm03.txt
+END

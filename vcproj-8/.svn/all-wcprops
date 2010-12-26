@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/ea/!svn/ver/14569/trunk/vcproj-8
+END
+dbghelpplug.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ea/!svn/ver/12398/trunk/vcproj-8/dbghelpplug.vcproj
+END
+txt-converter-char.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/txt-converter-char.vcproj
+END
+char-server_sql.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/char-server_sql.vcproj
+END
+char-server_txt.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/char-server_txt.vcproj
+END
+map-server_sql.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/map-server_sql.vcproj
+END
+map-server_txt.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/map-server_txt.vcproj
+END
+mapcache.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/mapcache.vcproj
+END
+ladmin.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/ladmin.vcproj
+END
+txt-converter-login.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ea/!svn/ver/14569/trunk/vcproj-8/txt-converter-login.vcproj
+END
+login-server_sql.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/login-server_sql.vcproj
+END
+login-server_txt.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ea/!svn/ver/14478/trunk/vcproj-8/login-server_txt.vcproj
+END

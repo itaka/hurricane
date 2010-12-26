@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/13000/trunk/3rdparty/zlib/include
+END
+zconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ea/!svn/ver/13000/trunk/3rdparty/zlib/include/zconf.h
+END
+zlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ea/!svn/ver/13000/trunk/3rdparty/zlib/include/zlib.h
+END

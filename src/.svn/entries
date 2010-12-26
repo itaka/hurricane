@@ -1,0 +1,55 @@
+10
+
+dir
+14599
+http://svn.eathena.ws/svn/ea/trunk/src
+http://svn.eathena.ws/svn/ea
+
+
+
+2010-12-17T20:04:26.971311Z
+14599
+ai4rei
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25c455a3-652e-4746-8d57-d9ef5c14f545
+
+plugins
+dir
+
+ladmin
+dir
+
+txt-converter
+dir
+
+common
+dir
+
+login
+dir
+
+char_sql
+dir
+
+char
+dir
+
+map
+dir
+
+tool
+dir
+

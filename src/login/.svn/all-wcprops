@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/ea/!svn/ver/14567/trunk/src/login
+END
+ipban.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/13000/trunk/src/login/ipban.h
+END
+loginlog.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/13092/trunk/src/login/loginlog.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/13022/trunk/src/login/Makefile.in
+END
+account.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/13000/trunk/src/login/account.h
+END
+admin.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/13449/trunk/src/login/admin.c
+END
+ipban_sql.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/14161/trunk/src/login/ipban_sql.c
+END
+ipban_txt.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/13000/trunk/src/login/ipban_txt.c
+END
+login.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/14567/trunk/src/login/login.c
+END
+loginlog_sql.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/13092/trunk/src/login/loginlog_sql.c
+END
+loginlog_txt.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/13408/trunk/src/login/loginlog_txt.c
+END
+account_sql.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/13092/trunk/src/login/account_sql.c
+END
+account_txt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/14567/trunk/src/login/account_txt.c
+END
+login.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/14476/trunk/src/login/login.h
+END

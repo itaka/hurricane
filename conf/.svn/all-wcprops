@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/ea/!svn/ver/14587/trunk/conf
+END
+battle_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/13551/trunk/conf/battle_athena.conf
+END
+map_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/13973/trunk/conf/map_athena.conf
+END
+char_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/14093/trunk/conf/char_athena.conf
+END
+motd.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ea/!svn/ver/11284/trunk/conf/motd.txt
+END
+log_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14550/trunk/conf/log_athena.conf
+END
+inter_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/13963/trunk/conf/inter_athena.conf
+END
+help2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ea/!svn/ver/12446/trunk/conf/help2.txt
+END
+msg_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14243/trunk/conf/msg_athena.conf
+END
+grf-files.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ea/!svn/ver/11284/trunk/conf/grf-files.txt
+END
+plugin_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/13233/trunk/conf/plugin_athena.conf
+END
+charhelp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ea/!svn/ver/14572/trunk/conf/charhelp.txt
+END
+maps_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/14293/trunk/conf/maps_athena.conf
+END
+subnet_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/11284/trunk/conf/subnet_athena.conf
+END
+Changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ea/!svn/ver/14587/trunk/conf/Changelog.txt
+END
+help.txt
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ea/!svn/ver/14081/trunk/conf/help.txt
+END
+atcommand_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ea/!svn/ver/14294/trunk/conf/atcommand_athena.conf
+END
+ladmin_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/13000/trunk/conf/ladmin_athena.conf
+END
+script_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/14577/trunk/conf/script_athena.conf
+END
+packet_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/14503/trunk/conf/packet_athena.conf
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ea/!svn/ver/11284/trunk/conf/readme.txt
+END
+login_athena.conf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/14161/trunk/conf/login_athena.conf
+END

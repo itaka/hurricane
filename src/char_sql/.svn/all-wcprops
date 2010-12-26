@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/ea/!svn/ver/14579/trunk/src/char_sql
+END
+int_mercenary.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ea/!svn/ver/13715/trunk/src/char_sql/int_mercenary.c
+END
+int_homun.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/13166/trunk/src/char_sql/int_homun.c
+END
+int_mail.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/12325/trunk/src/char_sql/int_mail.h
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/13166/trunk/src/char_sql/Makefile.in
+END
+int_pet.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/11245/trunk/src/char_sql/int_pet.c
+END
+int_mercenary.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ea/!svn/ver/13715/trunk/src/char_sql/int_mercenary.h
+END
+int_homun.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/13166/trunk/src/char_sql/int_homun.h
+END
+int_pet.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/11245/trunk/src/char_sql/int_pet.h
+END
+int_party.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/14319/trunk/src/char_sql/int_party.c
+END
+int_quest.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/14148/trunk/src/char_sql/int_quest.c
+END
+int_auction.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ea/!svn/ver/14255/trunk/src/char_sql/int_auction.c
+END
+char.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/14579/trunk/src/char_sql/char.c
+END
+int_party.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/11245/trunk/src/char_sql/int_party.h
+END
+int_guild.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/14567/trunk/src/char_sql/int_guild.c
+END
+int_storage.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ea/!svn/ver/14082/trunk/src/char_sql/int_storage.c
+END
+int_quest.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/13987/trunk/src/char_sql/int_quest.h
+END
+int_auction.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ea/!svn/ver/12305/trunk/src/char_sql/int_auction.h
+END
+inter.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14537/trunk/src/char_sql/inter.c
+END
+char.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ea/!svn/ver/14168/trunk/src/char_sql/char.h
+END
+int_guild.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/14487/trunk/src/char_sql/int_guild.h
+END
+int_storage.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ea/!svn/ver/12950/trunk/src/char_sql/int_storage.h
+END
+inter.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/13000/trunk/src/char_sql/inter.h
+END
+int_mail.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ea/!svn/ver/13433/trunk/src/char_sql/int_mail.c
+END

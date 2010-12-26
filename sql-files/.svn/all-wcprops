@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/ea/!svn/ver/14580/trunk/sql-files
+END
+upgrade_svn12278.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12561/trunk/sql-files/upgrade_svn12278.sql
+END
+upgrade_svn13583.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13583/trunk/sql-files/upgrade_svn13583.sql
+END
+upgrade_svn11388.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/11571/trunk/sql-files/upgrade_svn11388.sql
+END
+upgrade_svn13881.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13881.sql
+END
+upgrade_svn12559.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12560/trunk/sql-files/upgrade_svn12559.sql
+END
+upgrade_svn13963.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13963.sql
+END
+convert_engine_myisam.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ea/!svn/ver/14284/trunk/sql-files/convert_engine_myisam.sql
+END
+main.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ea/!svn/ver/14580/trunk/sql-files/main.sql
+END
+upgrade_svn12975.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn12975.sql
+END
+convert_passwords.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/9947/trunk/sql-files/convert_passwords.sql
+END
+item_db2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ea/!svn/ver/14142/trunk/sql-files/item_db2.sql
+END
+upgrade_svn14579.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14579/trunk/sql-files/upgrade_svn14579.sql
+END
+item_db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/14394/trunk/sql-files/item_db.sql
+END
+upgrade_svn13960_questlog.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13960_questlog.sql
+END
+upgrade_svn12043.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12049/trunk/sql-files/upgrade_svn12043.sql
+END
+upgrade_svn11018.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12480/trunk/sql-files/upgrade_svn11018.sql
+END
+upgrade_svn13025_log.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13025_log.sql
+END
+upgrade_svn11721_log.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ea/!svn/ver/11895/trunk/sql-files/upgrade_svn11721_log.sql
+END
+upgrade_svn14242.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14328/trunk/sql-files/upgrade_svn14242.sql
+END
+upgrade_svn10580.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/10580/trunk/sql-files/upgrade_svn10580.sql
+END
+upgrade_svn12561.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12561/trunk/sql-files/upgrade_svn12561.sql
+END
+upgrade_svn13115_mercenary.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13115_mercenary.sql
+END
+upgrade_svn13390.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13390.sql
+END
+upgrade_svn12725.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12725/trunk/sql-files/upgrade_svn12725.sql
+END
+upgrade_svn12581.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn12581.sql
+END
+upgrade_svn12464.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12479/trunk/sql-files/upgrade_svn12464.sql
+END
+upgrade_svn11915.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/11924/trunk/sql-files/upgrade_svn11915.sql
+END
+upgrade_svn14507.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14507/trunk/sql-files/upgrade_svn14507.sql
+END
+upgrade_svn14085.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14328/trunk/sql-files/upgrade_svn14085.sql
+END
+upgrade_svn10575_log.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ea/!svn/ver/10575/trunk/sql-files/upgrade_svn10575_log.sql
+END
+upgrade_svn12368.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12391/trunk/sql-files/upgrade_svn12368.sql
+END
+mob_db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ea/!svn/ver/14348/trunk/sql-files/mob_db.sql
+END
+upgrade_svn13719.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13729/trunk/sql-files/upgrade_svn13719.sql
+END
+upgrade_svn13890.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13890/trunk/sql-files/upgrade_svn13890.sql
+END
+upgrade_svn10575_db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ea/!svn/ver/10575/trunk/sql-files/upgrade_svn10575_db.sql
+END
+upgrade_svn11895.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/11895/trunk/sql-files/upgrade_svn11895.sql
+END
+upgrade_svn12975_log.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn12975_log.sql
+END
+upgrade_svn13370_inventory.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13370_inventory.sql
+END
+upgrade_svn13166_mercenary_owner.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13166_mercenary_owner.sql
+END
+convert_engine_innodb.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ea/!svn/ver/14284/trunk/sql-files/convert_engine_innodb.sql
+END
+logs.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ea/!svn/ver/13025/trunk/sql-files/logs.sql
+END
+mob_db2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ea/!svn/ver/14216/trunk/sql-files/mob_db2.sql
+END
+upgrade_svn11106.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/11571/trunk/sql-files/upgrade_svn11106.sql
+END
+upgrade_svn13117_char.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn13117_char.sql
+END
+upgrade_svn13541.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/13542/trunk/sql-files/upgrade_svn13541.sql
+END
+upgrade_svn14036.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/14328/trunk/sql-files/upgrade_svn14036.sql
+END
+upgrade_svn11582.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/11584/trunk/sql-files/upgrade_svn11582.sql
+END
+upgrade_svn12975_view.sql
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/ea/!svn/ver/13972/trunk/sql-files/upgrade_svn12975_view.sql
+END
+upgrade_svn12294.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/12561/trunk/sql-files/upgrade_svn12294.sql
+END
+upgrade_svn11548.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ea/!svn/ver/11571/trunk/sql-files/upgrade_svn11548.sql
+END

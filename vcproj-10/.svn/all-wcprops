@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/ea/!svn/ver/14569/trunk/vcproj-10
+END
+txt-converter-login.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ea/!svn/ver/14569/trunk/vcproj-10/txt-converter-login.vcxproj
+END
+login-server_sql.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/login-server_sql.vcxproj
+END
+login-server_txt.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/login-server_txt.vcxproj
+END
+txt-converter-char.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/txt-converter-char.vcxproj
+END
+char-server_sql.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/char-server_sql.vcxproj
+END
+char-server_txt.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/char-server_txt.vcxproj
+END
+map-server_sql.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/map-server_sql.vcxproj
+END
+map-server_txt.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/map-server_txt.vcxproj
+END
+mapcache.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/mapcache.vcxproj
+END
+ladmin.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ea/!svn/ver/14568/trunk/vcproj-10/ladmin.vcxproj
+END
