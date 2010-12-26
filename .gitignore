@@ -1,0 +1,14 @@
+*$~
+*.swp
+*.o
+*.swo
+*.swn
+save/
+config.log
+conf/import/
+conf/import-tmpl/
+log/*
+char-server_sql
+login-server_sql
+map-server_sql
+athena-start
