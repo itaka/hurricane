@@ -1,0 +1,6 @@
+" source this file into vim for shorcut commands
+let root =  glob(expand('%:p:h'))
+exec "com! Mroot e " . root
+exec "com! Mconf e " . root . "/conf/"
+exec "com! Msrc e " . root . "/src/"
+exec "com! Msql e " . root . "/sql-files/"
