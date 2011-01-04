@@ -1334,7 +1334,7 @@ int parse_login(int fd)
 				return 0;
 			}
 
-			result = mmo_auth(sd);
+			result = mmo_auth(sd);//send data on create or update account (itaka [c])
 
 			if( result == -1 )
 				login_auth_ok(sd);
@@ -1387,7 +1387,7 @@ int parse_login(int fd)
 			sprintf(message, "charserver - %s@%u.%u.%u.%u:%u", server_name, CONVIP(server_ip), server_port);
 			login_log(session[fd]->client_addr, sd->userid, 100, message);
 
-			result = mmo_auth(sd);
+			result = mmo_auth(sd); //send data on create or update account (itaka [c])
 			if( result == -1 && sd->sex == 'S' && sd->account_id < MAX_SERVERS && server[sd->account_id].fd == -1 )
 			{
 				ShowStatus("Connection of the char-server '%s' accepted.\n", server_name);

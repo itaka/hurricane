@@ -72,6 +72,7 @@ typedef int (*RecvFunc)(int fd);
 typedef int (*SendFunc)(int fd);
 typedef int (*ParseFunc)(int fd);
 
+//It also session[] (itaka [c])
 struct socket_data
 {
 	struct {
@@ -97,6 +98,8 @@ struct socket_data
 
 // Data prototype declaration
 
+//session have structure socket_data (itaka [c])
+/* Maximum number of file descriptors in `fd_set'.  */
 extern struct socket_data* session[FD_SETSIZE];
 
 extern int fd_max;

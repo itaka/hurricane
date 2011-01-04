@@ -12,6 +12,7 @@
 // supported encryption types: 1- passwordencrypt, 2- passwordencrypt2, 3- both
 #define PASSWORDENC 3
 
+//Data login session (itaka [c])
 struct login_session_data {
 
 	int account_id;

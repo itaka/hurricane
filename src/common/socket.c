@@ -478,12 +478,21 @@ int make_listen_bind(uint32 ip, uint16 port)
 	return fd;
 }
 
+//client connectint to server return fd(itaka [c])
 int make_connection(uint32 ip, uint16 port)
 {
+        /*A sockaddr_in: is a structure containing an internet address. 
+         * This structure is defined in netinet/in.h. (itaka [c])*/
 	struct sockaddr_in remote_address;
+        /*Maximum number of file descriptors in `fd_set' (itaka [c])*/
 	int fd;
 	int result;
 
+        //send params for define type of socket
+        //  AF_INET(int domain): address domain
+        //SOCK_STREAM(int type): socket type
+        //and third parameter int PROTOCOL(TCP/UDP)
+        
 	fd = sSocket(AF_INET, SOCK_STREAM, 0);
 
 	if (fd == -1) {
@@ -511,6 +520,7 @@ int make_connection(uint32 ip, uint16 port)
 
 	ShowStatus("Connecting to %d.%d.%d.%d:%i\n", CONVIP(ip), port);
 
+        //contect to server (itaka [c])
 	result = sConnect(fd, (struct sockaddr *)(&remote_address), sizeof(struct sockaddr_in));
 	if( result == SOCKET_ERROR ) {
 		ShowError("make_connection: connect failed (socket #%d, code %d)!\n", fd, sErrno);
@@ -524,11 +534,14 @@ int make_connection(uint32 ip, uint16 port)
 	sFD_SET(fd,&readfds);
 
 	create_session(fd, recv_to_fifo, send_from_fifo, default_func_parse);
+        /* ntohl(): function converts the unsigned integer 
+         * netlong from network byte order to host byte order. (itaka [c]) */
 	session[fd]->client_addr = ntohl(remote_address.sin_addr.s_addr);
 
 	return fd;
 }
 
+//create session (itaka [c]) ~?
 static int create_session(int fd, RecvFunc func_recv, SendFunc func_send, ParseFunc func_parse)
 {
 	CREATE(session[fd], struct socket_data, 1);

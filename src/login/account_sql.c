@@ -575,6 +575,7 @@ static bool mmo_auth_fromsql(AccountDB_SQL* db, struct mmo_account* acc, int acc
 	return true;
 }
 
+//Method for create new account must return true (itaka [c])
 static bool mmo_auth_tosql(AccountDB_SQL* db, const struct mmo_account* acc, bool is_new)
 {
 	Sql* sql_handle = db->accounts;
