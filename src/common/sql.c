@@ -83,6 +83,7 @@ Sql* Sql_Malloc(void)
 static int Sql_P_Keepalive(Sql* self);
 
 /// Establishes a connection.
+// This function called in the char_sql/inter.c [#str 284] (itaka [c])
 int Sql_Connect(Sql* self, const char* user, const char* passwd, const char* host, uint16 port, const char* db)
 {
 	if( self == NULL )

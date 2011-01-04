@@ -269,6 +269,7 @@ int inter_log(char* fmt, ...)
 #endif //TXT_SQL_CONVERT
 
 // initialize
+// This function called in the char.c [#str 4042] (itaka [c])
 int inter_init_sql(const char *file)
 {
 	//int i;
@@ -279,6 +280,7 @@ int inter_init_sql(const char *file)
 	//DB connection initialized
 	sql_handle = Sql_Malloc();
 	ShowInfo("Connect Character DB server.... (Character Server)\n");
+        //CONNTECT WITH BD send name db , password, port, etc (itaka [c])
 	if( SQL_ERROR == Sql_Connect(sql_handle, char_server_id, char_server_pw, char_server_ip, (uint16)char_server_port, char_server_db) )
 	{
 		Sql_ShowDebug(sql_handle);

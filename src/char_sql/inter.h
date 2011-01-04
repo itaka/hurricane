@@ -16,6 +16,7 @@ int mapif_disconnectplayer(int fd, int account_id, int char_id, int reason);
 
 int inter_log(char *fmt,...);
 
+//the path for file where defined sql settings (itaka [c])
 #define inter_cfgName "conf/inter_athena.conf"
 
 extern unsigned int party_share_level;

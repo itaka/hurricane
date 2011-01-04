@@ -4039,7 +4039,8 @@ int do_init(int argc, char **argv)
 	
 	ShowInfo("Finished reading the char-server configuration.\n");
 
-	inter_init_sql((argc > 2) ? argv[2] : inter_cfgName); // inter server 초기화
+        //A path for inter_cfgName defined in the inter.h [#str 19] (itaka [c])
+	inter_init_sql((argc > 2) ? argv[2] : inter_cfgName); // inter server 초기화READE THE SQL SETTINGS FILE (itaka [c])
 	ShowInfo("Finished reading the inter-server configuration.\n");
 	
 	ShowInfo("Initializing char server.\n");
