@@ -147,6 +147,8 @@
 
 ////////////// Others //////////////////////////
 // should be merged with any of above later
+// Calloc: takes (number) numbers of elements and second arguments size of element in bytes
+// return (void*) on block memory the claimed amount (itaka [c])
 #define CREATE(result, type, number) (result) = (type *) aCalloc ((number), sizeof(type))
 
 #define CREATE_A(result, type, number) (result) = (type *) aCallocA ((number), sizeof(type))

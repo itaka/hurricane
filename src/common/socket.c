@@ -304,7 +304,17 @@ int recv_to_fifo(int fd)
 
 	if( !session_isActive(fd) )
 		return -1;
-
+        /*sRecv is recv(fd2sock(fd),buf,len,flags) (itaka [c])*/
+        //                      ----(itaka [c])----
+        //          recv(SOCKET s,char* buf,int len,int flags)
+        //     s [in] The descriptor that identifies a connected socket.
+        //   buf[out] A pointer to the buffer to receive the incoming data.
+        //   len [in] The length, in bytes, of the buffer pointed to by the buf parameter.
+        // flags [in] A set of flags that influences the behavior of this function.
+        //
+        // If no error occurs, recv returns the number of bytes received and the buffer pointed to
+        // by the buf parameter will contain this data received. 
+        // If the connection has been gracefully closed, the return value is zero.
 	len = sRecv(fd, (char *) session[fd]->rdata + session[fd]->rdata_size, (int)RFIFOSPACE(fd), 0);
 
 	if( len == SOCKET_ERROR )
@@ -533,6 +543,8 @@ int make_connection(uint32 ip, uint16 port)
 	if (fd_max <= fd) fd_max = fd + 1;
 	sFD_SET(fd,&readfds);
 
+        //recv_to_fifo: function [str #301] (itaka [c])
+        //send_from_fifo: function [str #]  (itaka [c])
 	create_session(fd, recv_to_fifo, send_from_fifo, default_func_parse);
         /* ntohl(): function converts the unsigned integer 
          * netlong from network byte order to host byte order. (itaka [c]) */
@@ -544,15 +556,19 @@ int make_connection(uint32 ip, uint16 port)
 //create session (itaka [c]) ~?
 static int create_session(int fd, RecvFunc func_recv, SendFunc func_send, ParseFunc func_parse)
 {
+        //Method CREATE define in malloc.h [str #150] (itaka [c])
 	CREATE(session[fd], struct socket_data, 1);
+        //data on read have size buffer equal RFIFO_SIZE [str #208] (itaka [c])
 	CREATE(session[fd]->rdata, unsigned char, RFIFO_SIZE);
+        //data on write have size buffer equal WFIFO_SIZE [str #210] (itaka [c])
 	CREATE(session[fd]->wdata, unsigned char, WFIFO_SIZE);
 	session[fd]->max_rdata  = RFIFO_SIZE;
 	session[fd]->max_wdata  = WFIFO_SIZE;
-	session[fd]->func_recv  = func_recv;
-	session[fd]->func_send  = func_send;
-	session[fd]->func_parse = func_parse;
-	session[fd]->rdata_tick = last_tick;
+	session[fd]->func_recv  = func_recv; // function on recive     (itaka [c])
+	session[fd]->func_send  = func_send; // function on send data  (itaka [c])
+	session[fd]->func_parse = func_parse;// function on parse data (itaka [c])
+	session[fd]->rdata_tick = last_tick; // time of last recv (for detecting timeouts); 
+                                             // zero when timeout is disabled (itaka [c])
 	return 0;
 }
 
