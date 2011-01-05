@@ -1362,7 +1362,7 @@ void chrif_keepalive_ack(int fd)
 }
 
 /*==========================================
- *
+ * function parse for char server session (itaka [c])
  *------------------------------------------*/
 int chrif_parse(int fd)
 {
