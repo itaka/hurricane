@@ -259,6 +259,7 @@ static bool account_db_sql_get_property(AccountDB* self, const char* key, char* 
 }
 
 /// if the option is supported, adjusts the internal state
+//  create AccountDB_SQL structure it also db from file (itaka [c])
 static bool account_db_sql_set_property(AccountDB* self, const char* key, const char* value)
 {
 	AccountDB_SQL* db = (AccountDB_SQL*)self;
@@ -335,7 +336,7 @@ static bool account_db_sql_set_property(AccountDB* self, const char* key, const 
 static bool account_db_sql_create(AccountDB* self, struct mmo_account* acc)
 {
 	AccountDB_SQL* db = (AccountDB_SQL*)self;
-	Sql* sql_handle = db->accounts;
+	Sql* sql_handle = db->accounts; //simple sql structure (itaka [c])
 
 	// decide on the account id to assign
 	int account_id;
@@ -596,7 +597,7 @@ static bool mmo_auth_tosql(AccountDB_SQL* db, const struct mmo_account* acc, boo
 	if( is_new )
 	{// insert into account table
 		if( SQL_SUCCESS != SqlStmt_Prepare(stmt,
-			"INSERT INTO `%s` (`account_id`, `userid`, `user_pass`, `sex`, `email`, `level`, `state`, `unban_time`, `expiration_time`, `logincount`, `lastlogin`, `last_ip`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+			"INSERT INTO `%s` (`account_id`, `userid`, `user_pass`, `sex`, `email`, `level`, `state`, `unban_time`, `expiration_time`, `logincount`, `lastlogin`, `last_ip`,`camp`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)", // add camp column in login table (itaka [f])
 			db->account_db)
 		||  SQL_SUCCESS != SqlStmt_BindParam(stmt,  0, SQLDT_INT,    (void*)&acc->account_id,      sizeof(acc->account_id))
 		||  SQL_SUCCESS != SqlStmt_BindParam(stmt,  1, SQLDT_STRING, (void*)acc->userid,           strlen(acc->userid))
@@ -610,6 +611,7 @@ static bool mmo_auth_tosql(AccountDB_SQL* db, const struct mmo_account* acc, boo
 		||  SQL_SUCCESS != SqlStmt_BindParam(stmt,  9, SQLDT_UINT,   (void*)&acc->logincount,      sizeof(acc->logincount))
 		||  SQL_SUCCESS != SqlStmt_BindParam(stmt, 10, SQLDT_STRING, (void*)&acc->lastlogin,       strlen(acc->lastlogin))
 		||  SQL_SUCCESS != SqlStmt_BindParam(stmt, 11, SQLDT_STRING, (void*)&acc->last_ip,         strlen(acc->last_ip))
+		||  SQL_SUCCESS != SqlStmt_BindParam(stmt, 12, SQLDT_ENUM,   (void*)&acc->camp,            sizeof(acc->camp)) //send 12 param `camp` (itaka [f])
 		||  SQL_SUCCESS != SqlStmt_Execute(stmt)
 		) {
 			SqlStmt_ShowDebug(stmt);

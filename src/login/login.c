@@ -883,6 +883,12 @@ int mmo_auth_new(const char* userid, const char* pass, const char sex, const cha
 		return 0; // 0 = Unregistered ID
 
 	// check if the account doesn't exist already
+        // accounts->load_str:  (itaka [c])
+        // retrieve data from db and 
+        // store it in the provided data structure
+        // accounts: AccountDB structure,
+        //     &acc: store data structure (mmo_account structure)
+        //   userid: identifier user
 	if( accounts->load_str(accounts, &acc, userid) )
 	{
 		ShowNotice("Attempt of creation of an already existant account (account: %s_%c, pass: %s, received pass: %s)\n", userid, sex, acc.pass, pass);
@@ -894,15 +900,17 @@ int mmo_auth_new(const char* userid, const char* pass, const char sex, const cha
 	safestrncpy(acc.userid, userid, sizeof(acc.userid));
 	safestrncpy(acc.pass, pass, sizeof(acc.pass));
 	acc.sex = sex;
+        acc.camp = *"A"; //add default value for camp in mmo_account structur (itaka [f])
 	safestrncpy(acc.email, "a@a.com", sizeof(acc.email));
 	acc.expiration_time = ( login_config.start_limited_time != -1 ) ? time(NULL) + login_config.start_limited_time : 0;
 	safestrncpy(acc.lastlogin, "0000-00-00 00:00:00", sizeof(acc.lastlogin));
 	safestrncpy(acc.last_ip, last_ip, sizeof(acc.last_ip));
 
+        //send params on create accounts account_db_sql_create(AccountDB*,struct mmo_account*) (itaka [c])
 	if( !accounts->create(accounts, &acc) )
 		return 0;
 
-	ShowNotice("Account creation (account %s, id: %d, pass: %s, sex: %c)\n", acc.userid, acc.account_id, acc.pass, acc.sex);
+	ShowNotice("Account creation (account %s, id: %d, pass: %s, sex: %c, camp: %c)\n", acc.userid, acc.account_id, acc.pass, acc.sex, acc.camp);//(itaka [f])
 
 	if( DIFF_TICK(tick, new_reg_tick) > 0 )
 	{// Update the registration check.
@@ -919,7 +927,7 @@ int mmo_auth_new(const char* userid, const char* pass, const char sex, const cha
 //-----------------------------------------------------
 int mmo_auth(struct login_session_data* sd)
 {
-	struct mmo_account acc;
+	struct mmo_account acc; //is account structur (itaka [c])
 	int len;
 
 	char ip[16];
@@ -1592,6 +1600,8 @@ int login_config_read(const char* cfgName)
 			for( i = 0; account_engines[i].constructor; ++i )
 			{
 				AccountDB* db = account_engines[i].db;
+                                //call account_db_sql_set_property() from account_sql.c
+                                //for create db structure(AccountDB_SQL) (itaka [c])
 				if( db && db->set_property(db, w1, w2) )
 					break;
 			}

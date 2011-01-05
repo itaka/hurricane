@@ -19,6 +19,8 @@ struct login_session_data {
 	long login_id1;
 	long login_id2;
 	char sex;// 'F','M','S'
+	char camp;// 'A','O','S' add new variable camp into login_session_data
+                  //  sd (itaka [f])
 
 	char userid[NAME_LENGTH];
 	char passwd[32+1]; // 23+1 for plaintext, 32+1 for md5-ed passwords

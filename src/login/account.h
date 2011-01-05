@@ -42,6 +42,7 @@ struct mmo_account
 {
 	int account_id;
 	char userid[24];
+	char camp;              // camp (A/O/S) (itaka [f])
 	char pass[32+1];        // 23+1 for plaintext, 32+1 for md5-ed passwords
 	char sex;               // gender (M/F/S)
 	char email[40];         // e-mail (by default: a@a.com)
@@ -72,7 +73,9 @@ struct AccountDBIterator
 	bool (*next)(AccountDBIterator* self, struct mmo_account* acc);
 };
 
-
+//interaction account with mysql db (itaka [c])
+//have methods create ,save, destrou, etc ...
+//this methods define in account_sql.c [str #55 - #70]
 struct AccountDB
 {
 	/// Initializes this database, making it ready for use.
