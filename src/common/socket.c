@@ -347,6 +347,10 @@ int send_from_fifo(int fd)
 	if( session[fd]->wdata_size == 0 )
 		return 0; // nothing to send
 
+        //look at recv_to_fifo (itaka [c])
+        //If no error occurs, send returns the total number of bytes sent, 
+        //which can be less than the number requested to be sent in the len 
+        //parameter.
 	len = sSend(fd, (const char *) session[fd]->wdata, (int)session[fd]->wdata_size, 0);
 
 	if( len == SOCKET_ERROR )
@@ -543,8 +547,9 @@ int make_connection(uint32 ip, uint16 port)
 	if (fd_max <= fd) fd_max = fd + 1;
 	sFD_SET(fd,&readfds);
 
-        //recv_to_fifo: function [str #301] (itaka [c])
-        //send_from_fifo: function [str #]  (itaka [c])
+        //      recv_to_fifo: function [str #301] (itaka [c])
+        //    send_from_fifo: function [str #340] (itaka [c])
+        //default_func_parse: function [str #239] (itaka [c]) simple return 0
 	create_session(fd, recv_to_fifo, send_from_fifo, default_func_parse);
         /* ntohl(): function converts the unsigned integer 
          * netlong from network byte order to host byte order. (itaka [c]) */
