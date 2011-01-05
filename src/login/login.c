@@ -1214,6 +1214,9 @@ void login_auth_failed(struct login_session_data* sd, int result)
 //----------------------------------------------------------------------------------------
 int parse_login(int fd)
 {
+        //session define in socket.h (itaka [c])
+        //type session_data (void *)
+        //We will invest there(session_data), our data ~login_session_data
 	struct login_session_data* sd = (struct login_session_data*)session[fd]->session_data;
 	int result;
 
@@ -1228,7 +1231,7 @@ int parse_login(int fd)
 		return 0;
 	}
 
-	if( sd == NULL )
+	if( sd == NULL ) //if not yet login_session_data or client not have session (itaka [c])
 	{
 		// Perform ip-ban check
 		if( login_config.ipban && ipban_check(ipl) )
@@ -1297,7 +1300,10 @@ int parse_login(int fd)
 			bool israwpass = (command==0x0064 || command==0x0277 || command==0x02b0);
 
 			version = RFIFOL(fd,2);
+                        //put in username data from fd (itaka [c])
 			safestrncpy(username, (const char*)RFIFOP(fd,6), NAME_LENGTH);
+                        //checks type password and put in password 
+                        //data from fd(itaka [c])
 			if( israwpass )
 			{
 				safestrncpy(password, (const char*)RFIFOP(fd,30), NAME_LENGTH);
@@ -1312,6 +1318,7 @@ int parse_login(int fd)
 
 			sd->clienttype = clienttype;
 			sd->version = version;
+                        //write username and password in session data (itaka [c])
 			safestrncpy(sd->userid, username, NAME_LENGTH);
 			if( israwpass )
 			{
@@ -1333,8 +1340,8 @@ int parse_login(int fd)
 				login_auth_failed(sd, 3); // send "rejected from server"
 				return 0;
 			}
-
-			result = mmo_auth(sd);//send data on create or update account (itaka [c])
+                        //send session data on authentication user (itaka [c])
+			result = mmo_auth(sd);
 
 			if( result == -1 )
 				login_auth_ok(sd);
@@ -1387,7 +1394,8 @@ int parse_login(int fd)
 			sprintf(message, "charserver - %s@%u.%u.%u.%u:%u", server_name, CONVIP(server_ip), server_port);
 			login_log(session[fd]->client_addr, sd->userid, 100, message);
 
-			result = mmo_auth(sd); //send data on create or update account (itaka [c])
+                        //connection with char server - login server (itaka [c])
+			result = mmo_auth(sd); 
 			if( result == -1 && sd->sex == 'S' && sd->account_id < MAX_SERVERS && server[sd->account_id].fd == -1 )
 			{
 				ShowStatus("Connection of the char-server '%s' accepted.\n", server_name);
@@ -1473,7 +1481,7 @@ int parse_login(int fd)
 
 void login_set_defaults()
 {
-	login_config.login_ip = INADDR_ANY;
+	login_config.login_ip = INADDR_ANY; //INADDR_ANY: variable return ip for current computer (itaka [c])
 	login_config.login_port = 6900;
 	login_config.ipban_cleanup_interval = 60;
 	login_config.ip_sync_interval = 0;
