@@ -1047,6 +1047,7 @@ int mmo_auth(struct login_session_data* sd)
 	sd->login_id2 = rand();
 	safestrncpy(sd->lastlogin, acc.lastlogin, sizeof(sd->lastlogin));
 	sd->sex = acc.sex;
+        sd->camp = acc.camp; //update session (login_session_data) for camp (itaka [f])
 	sd->level = acc.level;
 
 	// update account data

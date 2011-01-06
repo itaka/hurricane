@@ -514,7 +514,7 @@ static bool account_db_sql_iter_next(AccountDBIterator* self, struct mmo_account
 	return false;
 }
 
-
+//get data about account from db (itaka [c])
 static bool mmo_auth_fromsql(AccountDB_SQL* db, struct mmo_account* acc, int account_id)
 {
 	Sql* sql_handle = db->accounts;
@@ -522,8 +522,9 @@ static bool mmo_auth_fromsql(AccountDB_SQL* db, struct mmo_account* acc, int acc
 	int i = 0;
 
 	// retrieve login entry for the specified account
+        // select data from login table (default table for accounts) (itaka [c])
 	if( SQL_ERROR == Sql_Query(sql_handle,
-	    "SELECT `account_id`,`userid`,`user_pass`,`sex`,`email`,`level`,`state`,`unban_time`,`expiration_time`,`logincount`,`lastlogin`,`last_ip` FROM `%s` WHERE `account_id` = %d",
+	    "SELECT `account_id`,`userid`,`user_pass`,`sex`,`email`,`level`,`state`,`unban_time`,`expiration_time`,`logincount`,`lastlogin`,`last_ip`,`camp` FROM `%s` WHERE `account_id` = %d", //add camp field on select (itaka [f])
 		db->account_db, account_id )
 	) {
 		Sql_ShowDebug(sql_handle);
@@ -548,6 +549,7 @@ static bool mmo_auth_fromsql(AccountDB_SQL* db, struct mmo_account* acc, int acc
 	Sql_GetData(sql_handle,  9, &data, NULL); acc->logincount = strtoul(data, NULL, 10);
 	Sql_GetData(sql_handle, 10, &data, NULL); safestrncpy(acc->lastlogin, data, sizeof(acc->lastlogin));
 	Sql_GetData(sql_handle, 11, &data, NULL); safestrncpy(acc->last_ip, data, sizeof(acc->last_ip));
+	Sql_GetData(sql_handle, 12, &data, NULL); acc->camp = data[0]; //get data about camp account and pass it in the acc (itaka [f])
 
 	Sql_FreeResult(sql_handle);
 
