@@ -57,6 +57,7 @@ struct Login_Config {
 	char date_format[32];                           // date format used in messages
 	bool console;                                   // console input system enabled?
 	bool new_account_flag;                          // autoregistration via _M/_F ?
+	bool new_camp_flag;                             // autoregistration via _MA/_FO, work if new_account_flag = true (itaka [f])
 	int start_limited_time;                         // new account expiration time (-1: unlimited)
 	bool use_md5_passwds;                           // work with password hashes instead of plaintext passwords?
 	int min_level_to_connect;                       // minimum level of player/GM (0: player, 1-99: GM) to connect

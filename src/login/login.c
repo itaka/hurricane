@@ -862,12 +862,28 @@ int parse_fromchar(int fd)
 //-------------------------------------
 // Make new account
 //-------------------------------------
-int mmo_auth_new(const char* userid, const char* pass, const char sex, const char* last_ip)
+int mmo_auth_new(const char* userid, const char* pass, const char sex, const char* last_ip,...) //FIXME bad style for pass dop param (itaka [f])
 {
 	static int num_regs = 0; // registration counter
 	static unsigned int new_reg_tick = 0;
 	unsigned int tick = gettick();
 	struct mmo_account acc;
+        char * camp; // add variable camp (itaka [f])
+
+        //initialize and checking constant camp (itaka [f])
+        if (login_config.new_camp_flag)
+        {
+          va_list ap;
+
+          va_start(ap,last_ip);
+           camp = va_arg(ap,char *);
+          va_end(ap);
+
+          if( camp && camp != 'A' && camp != 'O' )
+                  return 0; // 0 = Unregistered ID
+          ShowNotice("Creating Account with camp: %c\n",camp);
+        }
+        //------------------------------------
 
 	//Account Registration Flood Protection by [Kevin]
 	if( new_reg_tick == 0 )
@@ -900,7 +916,7 @@ int mmo_auth_new(const char* userid, const char* pass, const char sex, const cha
 	safestrncpy(acc.userid, userid, sizeof(acc.userid));
 	safestrncpy(acc.pass, pass, sizeof(acc.pass));
 	acc.sex = sex;
-        acc.camp = *"A"; //add default value for camp in mmo_account structur (itaka [f])
+        acc.camp = camp; //assignment acc.camp -> camp (itaka [f])
 	safestrncpy(acc.email, "a@a.com", sizeof(acc.email));
 	acc.expiration_time = ( login_config.start_limited_time != -1 ) ? time(NULL) + login_config.start_limited_time : 0;
 	safestrncpy(acc.lastlogin, "0000-00-00 00:00:00", sizeof(acc.lastlogin));
@@ -910,7 +926,7 @@ int mmo_auth_new(const char* userid, const char* pass, const char sex, const cha
 	if( !accounts->create(accounts, &acc) )
 		return 0;
 
-	ShowNotice("Account creation (account %s, id: %d, pass: %s, sex: %c, camp: %c)\n", acc.userid, acc.account_id, acc.pass, acc.sex, acc.camp);//(itaka [f])
+	ShowNotice("Account creation (account %s, id: %d, pass: %s, sex: %c)\n", acc.userid, acc.account_id, acc.pass, acc.sex);
 
 	if( DIFF_TICK(tick, new_reg_tick) > 0 )
 	{// Update the registration check.
@@ -969,16 +985,23 @@ int mmo_auth(struct login_session_data* sd)
 	{
 		if( len > 2 && strnlen(sd->passwd, NAME_LENGTH) > 0 && // valid user and password lengths
 			sd->passwdenc == 0 && // unencoded password
-			sd->userid[len-2] == '_' && memchr("FfMm", sd->userid[len-1], 4) ) // _M/_F suffix
+			(sd->userid[len-2] == '_' && memchr("FfMm", sd->userid[len-1], 4) || // _M/_F suffix
+                         // --------------------- checking camp's flag (itaka [f])--------------------------
+                         login_config.new_camp_flag && // check whether the flag is raised (itaka [f])
+                         sd->userid[len-3] == '_' && memchr("FfMm", sd->userid[len-2], 4) && 
+                         memchr("AaOo", sd->userid[len-1], 4) )  // _MA/_FO suffix checks camp (itaka [f])
+                  )
 		{
 			int result;
 
 			// remove the _M/_F suffix
-			len -= 2;
+                        // or remove the _MA/_FO suffix (itaka [f])
+			len = (login_config.new_camp_flag) ? len - 3 : len - 2;
 			sd->userid[len] = '\0';
 
                         //call function for create account where TOUPPER() is char sex
-			result = mmo_auth_new(sd->userid, sd->passwd, TOUPPER(sd->userid[len+1]), ip);
+                        //checking on camp_flag (itaka [f])
+			result = (login_config.new_camp_flag) ? mmo_auth_new(sd->userid, sd->passwd, TOUPPER(sd->userid[len+1]), ip, TOUPPER(sd->userid[len+2])) : mmo_auth_new(sd->userid, sd->passwd, TOUPPER(sd->userid[len+1]), ip);
 			if( result != -1 )
 				return result;// Failed to make account. [Skotlex].
 		}
@@ -1555,6 +1578,8 @@ int login_config_read(const char* cfgName)
 
 		else if(!strcmpi(w1, "new_account"))
 			login_config.new_account_flag = (bool)config_switch(w2);
+		else if(!strcmpi(w1, "new_camp")) //check define camp's flag or not in the login config file (itaka [f])
+			login_config.new_camp_flag = (bool)config_switch(w2);
 		else if(!strcmpi(w1, "start_limited_time"))
 			login_config.start_limited_time = atoi(w2);
 		else if(!strcmpi(w1, "check_client_version"))
